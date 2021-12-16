@@ -29,7 +29,7 @@ poll：通过一个可变长度的数组解决了select文件描述符受限的�
 
 4、epoll
 
-epoll：轮寻排查所有文件描述符的效率不高，使服务器并发能力受限。因此，epoll采用只返回状态发生变化的文件描述符，便解决了轮寻的瓶颈。
+epoll：epoll采用只返回状态发生变化的文件描述符，便解决了轮寻的瓶颈。
 
 epoll对文件描述符的操作有两种模式：LT（level trigger）和ET（edge trigger）。LT模式是默认模式
 
