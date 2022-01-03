@@ -17,7 +17,7 @@ public:
     }
 private:
     Singleton() {}
-    static T *instance;
+    static volatile T *instance;
 };
 
 template<class T> T* Singleton<T>::instance = nullptr;
